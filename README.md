@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# kiramibot-plugin-example
+# kirami-plugin-example
 
 _✨ KiramiBot 插件简单描述 ✨_
 
@@ -13,7 +13,7 @@ _✨ KiramiBot 插件简单描述 ✨_
     <img src="https://img.shields.io/github/license/owner/kirami-plugin-example.svg" alt="license">
 </a>
 <a href="https://pypi.python.org/pypi/kiramibot-plugin-example">
-    <img src="https://img.shields.io/pypi/v/kiramibot-plugin-example.svg" alt="pypi">
+    <img src="https://img.shields.io/pypi/v/kirami-plugin-example.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
 
