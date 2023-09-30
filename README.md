@@ -80,14 +80,14 @@ conda install kirami-plugin-example
 ```
 </details>
 
-打开 KiramiBot 项目根目录下的配置文件文件, 以 `kirami.toml` 为例，在 `[plugin]` 部分追加写入
+打开 KiramiBot 项目根目录下的配置文件, 以 `kirami.toml` 为例，在 `[plugin]` 部分追加写入
 ```toml
 plugins = ["kiramit_plugin_example"]
 ```
 
 ## ⚙️ 配置
 
-在 KiramiBot 项目的 `.env` 文件中添加下表中的必填配置
+在 KiramiBot 项目的配置文件中添加下表中的必填配置
 
 | 配置项 | 必填 | 默认值 | 说明 |
 |:-----:|:----:|:----:|:----:|
