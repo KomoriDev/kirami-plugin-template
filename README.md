@@ -28,21 +28,26 @@ _✨ KiramiBot 插件简单描述 ✨_
 4. 修改 README 中的插件名和插件描述, 并在下方填充相应的内容
 
 配置发布工作流:
-1. 前往 https://pypi.org/manage/account/#api-tokens 并创建一个新的 API 令牌。创建成功后不要关闭页面，不然你将无法再次查看此令牌。
-2. 在单独的浏览器选项卡或窗口中，[打开 Actions secrets and variables 页面](./settings/secrets/actions)。你也可以在 Settings - Secrets and variables - Actions 中找到此页面。
-3. 点击 New repository secret 按钮，创建一个名为 `PYPI_API_TOKEN` 的新令牌，并从第一步复制粘贴令牌。
+1. 跟随 [PyPI 文档](https://docs.pypi.org/trusted-publishers/) 配置 可信发布
+   - **PyPI Project Name** 插件名，如：`kirami-plugin-xxx`
+   - **Owner** 你的 Github 用户名
+   - **Repository name** 仓库名，如：`kirami-plugin-xxx`
+   - **Workflow name** 发布工作流，填写 `release.yml`
+   - **Environment name** 是你的发布环境，填写 `release`
+  例如，如果您有一个位于 https://github.com/octo-org/sampleproject 的存储库，其发布工作流程位于 `release.yml`，并且您希望将其作为示例项目发布到 PyPI，那么您将执行以下操作：
+  <img src="https://docs.pypi.org/assets/pending-publisher-form-filled.png"/>
 
-触发发布工作流:
-推送任意 tag 即可触发。
+2. 进入工作流，修改 `environment`
+   
+   ```yaml
+   environment:
+      name: release
+      url: https://pypi.org/p/<your-pypi-project-name>
+   ```
 
-创建 tag:
-```bash
-git tag <tag_name>
-```
-推送本地所有 tag:
-```bash
-git push origin --tags
-```
+3. 发版
+
+
 ## 📖 介绍
 
 这里是插件的详细介绍部分
