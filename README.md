@@ -34,10 +34,13 @@ _✨ KiramiBot 插件简单描述 ✨_
    - **Repository name** 仓库名，如：`kirami-plugin-xxx`
    - **Workflow name** 发布工作流，填写 `release.yml`
    - **Environment name** 是你的发布环境，填写 `release`
-  例如，如果您有一个位于 https://github.com/octo-org/sampleproject 的存储库，其发布工作流程位于 `release.yml`，并且您希望将其作为示例项目发布到 PyPI，那么您将执行以下操作：
-  <img src="https://docs.pypi.org/assets/pending-publisher-form-filled.png"/>
+     
+   例如，如果您有一个位于 https://github.com/octo-org/sampleproject 的存储库，其发布工作流程位于 `release.yml`，并且您希望将其作为示例项目发布到 PyPI，那么您将执行以下操作： 
+   <div align="left">
+     <img src="https://docs.pypi.org/assets/pending-publisher-form-filled.png" style="wight: 1000px; height: 600px"/>
+   </div>
 
-2. 进入工作流，修改 `environment`
+3. 进入工作流，修改 `environment`
    
    ```yaml
    environment:
@@ -45,7 +48,7 @@ _✨ KiramiBot 插件简单描述 ✨_
       url: https://pypi.org/p/<your-pypi-project-name>
    ```
 
-3. 发版
+4. 发版
 
 
 ## 📖 介绍
